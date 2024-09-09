@@ -1,0 +1,44 @@
+:root {
+    --mclaren-r: #ef7a1a; /* McLaren Renault */
+    --mclaren-h: #888888; /* McLaren Honda */
+    --aston: #469860; /* Aston Martin Mercedes */
+    --merc: cyan; /* Mercedes */
+    --renault: #fdec6e; /* Renault */
+    --rpoint: #f363b9; /* Racing Point Mercedes */
+    --toro-rosso: #340cc6; /* Toro Rosso */
+    --alpine: #086eea; /* Alpine Renault */
+    --ferrari: red; /* Ferrari */
+    --hrt: #a8986c; /* HRT Cosworth */
+    --manor: #8bb8f7; /* Marrusia/Manor Renault */
+    --lotus: #b6995b; /* Lotus Mercedes */
+    --williams: white; /* Williams Martini Mercedes */
+    --caterham: #5ccb3a; /* Caterham F1 Renault */
+    --sauber: #692727; /* Sauber Ferrari */
+    --bmw: #638cb3; /* BMW Sauber/Gigakubica's home */
+    /* fuck RBR, no red bull for you */
+}
+
+.color, .name {background-color: transparent; border-left-color: transparent;} /* fallback/default, shan't delete */
+.color.mclaren-r, .name.mclaren-r {background-color: var(--mclaren-r); border-left-color: var(--mclaren-r);}
+.color.mclaren-h, .name.mclaren-h {background-color: var(--mclaren-h); border-left-color: var(--mclaren-h);}
+.color.aston, .name.aston {background-color: var(--aston); border-left-color: var(--aston);}
+.color.merc, .name.merc {background-color: var(--merc); border-left-color: var(--merc);}
+.color.renault, .name.renault {background-color: var(--renault); border-left-color: var(--renault);}
+.color.rpoint, .name.rpoint {background-color: var(--rpoint); border-left-color: var(--rpoint);}
+.color.toro-rosso, .name.toro-rosso {background-color: var(--toro-rosso); border-left-color: var(--toro-rosso);}
+.color.alpine, .name.alpine {background-color: var(--alpine); border-left-color: var(--alpine);}
+.color.ferrari, .name.ferrari {background-color: var(--ferrari); border-left-color: var(--ferrari);}
+.color.hrt, .name.hrt {background-color: var(--hrt); border-left-color: var(--hrt);}
+.color.manor, .name.manor {background-color: var(--manor); border-left-color: var(--manor);}
+.color.lotus, .name.lotus {background-color: var(--lotus); border-left-color: var(--lotus);}
+.color.caterham, .name.caterham {background-color: var(--caterham); border-left-color: var(--caterham);}
+.color.sauber, .name.sauber {background-color: var(--sauber); border-left-color: var(--sauber);}
+.color.williams, .name.williams {background-color: var(--williams); border-left-color: var(--williams);}
+.color.bmw, .name.bmw {background-color: var(--bmw); border-left-color: var(--bmw);}
+
+/*
+
+here's a handy site that i found with all team colours:
+https://teamcolorcodes.com/formula-1/
+
+*/

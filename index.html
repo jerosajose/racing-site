@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racing Site Template by @jerosajose</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="manifest" href="./resources/app.webmanifest" />
+    <script src="./scripts/settings.js" defer></script>
+
+    <!-- Site by José Enrique/JerosGamer89 -->
+
+    <meta property="og:site_name" content="Racing Site Template" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Amateur Racing League" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<link rel="apple-touch-icon" href="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<meta name="author" content="@jerosajose" />
+    <meta name="theme-color" content="#010101" />
+    <meta name="apple-mobile-web-app-status-bar" content="#010101" />
+    <style>
+        /* logo gradient */
+        @keyframes rotate {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+
+        .gradient {
+            --size: 250px;
+            --speed: 50s;
+            --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+            position: absolute;
+            opacity: 0.5;
+
+            width: var(--size);
+            height: var(--size);
+            filter: blur(calc(var(--size) / 5));
+            background-image: linear-gradient(#777373d9, #cac4c4);
+            animation: rotate var(--speed) var(--easing) alternate infinite;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            transform: translateX(400px);
+            z-index: 1;
+        }
+
+        @media (min-width: 720px) {
+            .gradient {
+                --size: 500px;
+            }
+        }
+    </style>
+</head>
+<body class="homepage">
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+        <defs>
+            <style>
+                @keyframes rotate {
+                         0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                .out-top {
+                    animation: rotate 20s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .in-top {
+                    animation: rotate 10s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .out-bottom {
+                    animation: rotate 25s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+                .in-bottom {
+                    animation: rotate 15s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+            </style>
+        </defs>
+        <path fill="#b5a7a7aa" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+        <path fill="#aaaaaaff" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+        <path fill="#de2a2aaa" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+        <path fill="#8f0000ff" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+    </svg>
+    
+    <div class="upnext" style="display: flex;">
+        <!-- set to "flex" to make it visible; "none" to hide it -->
+        <div>
+            <h2>Next race</h2>
+            <span>1st April 2025</span>
+        </div>
+        <span id="timeleft">0 00 000</span>
+    </div>
+    <div class="moveaside">
+        <div id="kiosk" class="mainlogo"></div>
+        <div class="gradient"></div>
+        <img src="./assets/logo.png" class="f1logo" />
+    </div>
+    <div class="links" id="links">
+        <a id="races" href="./races">Races</a><br>
+        <a id="champ" href="./standings/">Standings</a><br>
+        <a id="circuits" href="./circuits">Circuits</a><br>
+        <a id="ruleset" href="./ruleset/">Ruleset</a><br><br>
+        <span class="footnote">
+            <content>
+                &copy; 2024 Amateur Racing Group<br>
+                <a href="//jerosajose.github.io/" target="_blank">Website by @jerosajose</a>
+                <!--
+                do not remove my referral link, see license for info about author crediting
+                feel free to remove this comment for production code although
+                -->
+            </content>
+            <a href="//instagram.com/f1" target="_blank" class="referral">
+                <img src="./assets/nav/insta.png" title="Visit F1.com" />
+            </a>
+            <a href="#" class="settings-btn" id="settingsBtn">
+                <img src="./assets/nav/settings.png" title="Settings" />
+            </a>
+        </span>
+    </div>
+
+    
+    <div class="settings" id="setmodal">
+        <div class="container">
+            <span class="close">esc</span>
+
+            <div class="tabselector">
+                <button class="tablinks" onclick="openCity(event, 'settings')" id="defaultOpen">Settings</button>
+                <button class="tablinks" onclick="openCity(event, 'webapp')">Web app</button>
+                <button class="tablinks" onclick="openCity(event, 'credits')">Credits</button>
+                <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+            </div>
+              
+            <div id="settings" class="tabcontent">
+                <h1>Settings</h1>
+                <input class="animbg" type="checkbox" id="toggle" />
+                <label class="animbg" for="toggle">Animated backgrounds</label><br>
+    
+                <input type="checkbox" id="filterToggle" />
+                <label for="filter">Plain track images</label>
+            </div>
+            
+            <div id="webapp" class="tabcontent">
+                <h1>Web app</h1>
+                <p>
+                    Install this web application on your device, and access it
+                    just like a regular app, with a shortcut on your home screen
+                    and off-line functionality.
+                    <br>
+                    <button class="generic-link" onclick="installApp()">Install now</button>
+                    <br><i>
+                        NOTE: This may not work in all browsers, works best with Chrome and
+                        some Chromium-based browsers.
+                    </i>
+                </p>
+                <p>
+                    Already installed?<br>
+                    <a class="generic-link" href="racing-site://">Launch app</a>
+                </p>
+            </div>
+            
+            <div id="credits" class="tabcontent">
+                <h1>Credits</h1>
+                <p>Animated backgrounds made by various authors from CodePen.com</p>
+                <p>Homepage and navigation bar racing icons obtained from Icons8.com</p>
+                <p>Used fonts: Red Hat, Space Grotesk and propietary fonts of FOM Management (F1).</p>
+                <p>Track layouts obtained from www.f1-track-vectors.com</p>
+                <p>Drivers' faces obtained from Lom1138's Discord server.</p>
+                <p>The Formula 1 old logotype is property of Formula One Management Ltd.</p>
+            </div>
+
+            <div id="about" class="tabcontent">
+                <h1>About</h1>
+                <p>
+                    <pre> Racing Site v1.2 (August 2024)</pre><br>
+                    Site managed by YourNameGoesHere. Original template by
+                    <a href="//jerosajose.github.io/" target="_blank">@jerosajose</a>
+                    <!-- you shouldn't touch this, read license
+                     you can reduce the font size tho, it looked cool in a bigger size lol -->
+                </p>
+                <p>
+                    Licensed under the GNU Affero GPL v3.0 license. Know more about
+                    it by clicking any of the links below.
+                </p>
+                <p>
+                    <a href="https://github.com/jerosajose/racing-site/blob/main/LICENSE"
+                    target="_blank" class="generic-link">
+                        License terms
+                    </a>&nbsp;
+                    <a href="https://github.com/jerosajose/racing-site"
+                    target="_blank" class="generic-link">
+                        Source code
+                    </a>&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <iframe src="./codepen/css-car.html" id="fx" class="css-car"></iframe>
+
+
+    <script>
+        // Up next
+        var countDownDate = new Date("Apr 1, 2030 00:00:00").getTime();
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById("timeleft").innerHTML = days + " days";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Race finished";
+            }
+        }, 100);
+    </script>
+    <script>
+        // Settings window
+        var modal = document.getElementById("setmodal");
+        var btn = document.getElementById("settingsBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        })
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Tabs settings system
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver TV Lower Third</title>
+<style>
+@font-face {
+    font-family: 'RedHat';
+    src: url('../fonts/RedHatDisplay-Variable.ttf');
+}
+
+.lt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 350px;
+    text-align: left;
+}
+
+.lt > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.lt .firstrow {
+    background-color: #000;
+    color: white;
+}
+
+.lt .firstrow .count {
+    background-color: #555;
+    color: #ccc;
+    width: 50px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'RedHat';
+    font-weight: bold;
+    clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+}
+
+.lt .firstrow .color {
+    clip-path: polygon(70% 0, 100% 0%, 30% 100%, 0% 100%);
+    width: 25px;
+    height: 100%;
+    margin-left: -20px;
+}
+
+.lt .firstrow span {
+    font-family: 'RedHat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.lt .secrow {
+    background-color: #222222dd;
+    font-family: 'RedHat';
+    color: #ccc;
+    padding-left: 75px;
+    height: 30px;
+}
+</style>
+</head>
+<body>
+    <div class="lt">
+        <div class="firstrow">
+            <div class="count">1</div>
+            <div class="color"
+            style="background-color: aqua;"></div>
+            <span>Drivername</span>
+        </div>
+        <div class="secrow">
+            <span>Constructor/Team</span>
+        </div>
+    </div>
+</body>
+</html>

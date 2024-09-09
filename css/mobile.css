@@ -1,0 +1,403 @@
+@media only screen and (max-width: 1000px) {
+    .homepage .css-car {
+        display: none !important;
+    }
+    .homepage svg {
+        height: 100vh;
+        width: 100vw;
+    }
+    body.homepage {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content auto;
+        overflow: hidden;
+    }
+    .homepage .footnote {
+        position: absolute;
+        bottom: 2vh; left: 0; right: 0;
+        line-height: 15px;
+        height: 40px;
+    }
+    .homepage .footnote content {
+        opacity: 0.6;
+        display: block;
+        transform: translate(2vw, 0.5vh) !important;
+    }
+    .homepage .footnote .referral {
+        right: 15vw;
+    }
+    .homepage .footnote .settings-btn {
+        right: 1vw;
+    }
+    .homepage .footnote .referral,
+    .homepage .footnote .settings-btn {
+        opacity: 0.7;
+    }
+    .homepage .footnote .referral img,
+    .homepage .footnote .settings-btn img {
+        height: 8vh;
+    }
+    .homepage .settings {
+        background-color: rgba(0,0,0,0.7);
+        align-items: end;
+        margin: 0;
+        padding: 0;
+    }
+    .homepage .settings .container {
+        backdrop-filter: blur(20px) contrast(60%) saturate(300%);
+        width: 100vw;
+        height: 75vh;
+        overflow-y: auto;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: inherit;
+        grid-template-columns: 8rem 1fr;
+    }
+    @keyframes hsc {
+        0% {
+            transform: translateY(80%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+    .homepage .settings .container .close {
+        display: none;
+    }
+    .homepage .settings details summary {
+        margin-left: -40px !important;
+    }
+    .settings details > summary:hover {
+        margin-left: 0 !important;
+    }
+    .homepage .settings .container input.animbg {
+        filter: contrast(0%) hue-rotate(150deg) brightness(130%);
+    }
+    .homepage .settings .container label {
+        padding-bottom: 10px;
+    }
+    .homepage .settings .container label.animbg::after {
+        content: ' (No disponible en moviles)';
+        opacity: 0.6;
+    }
+    .homepage .moveaside {
+        justify-content: center;
+    }
+    .homepage .mainlogo {
+        display: none;
+    }
+    .homepage .moveaside .f1logo {
+        margin-top: 15vh;
+        width: 70vw;
+    }
+    .homepage .moveaside .tgr {
+        width: 75vw;
+        margin: 5vh 0;
+    }
+    .homepage .links a:hover {
+        font-size: 7vh;
+    }
+    .homepage .upnext {
+        background-image: linear-gradient(
+            to bottom,
+            #ff000056,
+            #ff000000
+        );
+    }
+    .homepage .upnext #timeleft {
+        margin-left: 4vw;
+    }
+    .homepage .upnext div {
+        padding-right: 4vw;
+    }
+
+    /* END OF MAIN PAGE STYLING */
+
+    iframe.universal-bg {
+        display: none !important;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        height: min-content;
+        width: 100vw;
+        opacity: 1;
+        backdrop-filter: blur(5px) !important;
+
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+
+    nav a {
+        background-color: #111111dd;
+        padding: 15px;
+    }
+
+    nav .flex {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    nav a img {
+        width: 35px;
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    nav a div.tgrlogo {
+        width: 70px;
+        height: 40px;
+        opacity: 0.7;
+    }
+
+    body.races,
+    body.champ,
+    body.tracks {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .r-list {
+        background-color: #0a0a0a;
+        padding-left: 10px;
+        padding-top: 40px;
+        height: min-content;
+        position: relative;
+        flex-direction: row;
+    }
+
+    .r-list h1 {
+        position: absolute;
+        top: -20px; left: 5px;
+    }
+
+    .r-list h2 {
+        transform: rotate(-0deg);
+        padding: 0 20px;
+    }
+
+    .r-list h2.pre::before {
+        content: '20-22';
+        white-space: nowrap;
+    }
+
+    .r-list hr {
+        display: none;
+    }
+
+    .r-list button {
+        width: min-content;
+        min-width: 200px;
+        padding-right: 20px;
+    }
+
+    .r-list button:hover {
+        padding-left: 30px;
+    }
+
+    .r-list.c button {
+        min-width: 250px;
+        padding-right: 40px;
+        text-align: center;
+    }
+
+    .tabcontent header .cards {
+        /* aqui hay algo raro que no cuadra, pero funciona,
+          no tocar */
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: 
+            'desc desc desc desc'
+            'track track session session'
+            'track track date date'
+        ;
+    }
+
+    .tabcontent header .cards .track a span {
+        /* it's been 84 years... 
+           implementar para PC tmb */
+        opacity: 1;
+    }
+
+    .tabcontent header .cards .track img {
+        width: 100%;
+        height: 75%;
+        object-position: center;
+    }
+
+    details {
+        padding: 20px 0;
+        width: 100% !important;
+        overflow-x: auto;
+    }
+
+    details > summary {
+        padding-left: 40px;
+    }
+
+    .race ol {
+        width: min-content;
+    }
+
+    .race ol li {
+        grid-template-columns: auto auto 190px 100px 85px;
+    }
+
+    .race ol li.header {
+        font-family: 'F1-Regular';
+        grid-template-columns: 2.15fr 1.15fr 0.8fr;
+    }
+
+    .r-parent {
+        padding-bottom: 240px;
+    }
+
+    .r-parent .podium {
+        flex-wrap: nowrap;
+        gap: 30px;
+        overflow-x: auto;
+    }
+
+
+
+    .champ-content {
+        padding-bottom: 140px;
+        grid-template-columns: 50vw;
+        grid-template-rows: auto auto auto;
+    }
+
+    .champ-content .participants {
+        width: calc(100vw - 120px);
+    }
+
+    .champ-content .stats {
+        max-width: calc(100vw - 40px);
+        max-height: 65vh;
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    .champ-content .stats ol {
+        width: 900px;
+    }
+
+    .champ-content .stats .header {
+        background-color: #1f1f1f;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    .champ-content .stats ol .count {
+        position: sticky;
+        left: 0;
+    }
+
+    .champ-content .stats ol .color {
+        position: sticky;
+        left: 40px;
+    }
+
+    .champ-content .stats ol .name {
+        position: sticky;
+        left: 70px;
+    }
+
+    .champ-content .winner {
+        width: calc(100vw - 120px);
+        height: 50vh;
+        flex-direction: column !important;
+    }
+
+    .champ-content .winner .trophy {
+        height: 65%;
+        transform: translateY(-10%);
+    }
+
+    .champ-content .winner .meta {
+        font-size: 16px;
+        align-items: center;
+        transform: translateY(-10%);
+    }
+
+    .champ-content .winner .meta h1 {
+        font-size: 30px;
+    }
+
+
+    
+    .tracks .tabcontent .silhouette {
+        display: none;
+    }
+
+    .tracks .tabcontent .moreinfo {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .tracks .tabcontent .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            'location location'
+            'fastest fastest'
+            'length first'
+            'karts karts'
+        ;
+        margin-bottom: 240px;
+    }
+
+    .tracks .tabcontent .cards .fastest .driver {
+        flex-direction: column;
+    }
+
+    .tracks .tabcontent .cards .karts div {
+        margin-left: 10px;
+    }
+
+    .tracks .tabcontent .cards .karts img {
+        height: 85%;
+        left: -15vw;
+    }
+
+    .tracks .tabcontent#pm .cards .karts img {
+        opacity: 0.3 !important;
+    }
+
+
+
+    body.ruleset {
+        display: block;
+        overflow: auto;
+        padding-bottom: 120px;
+    }
+
+    body.ruleset .container {
+        height: auto;
+        width: calc(100vw - 120px);
+        margin-top: 20px;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    body.ruleset .container .news {
+        height: 40vh;
+    }
+
+    body.ruleset .container .rules {
+        height: auto;
+        width: calc(120%) !important;
+        padding-inline: 10px;
+    }
+
+    body.ruleset .container .rules h1 {
+        padding-inline: 40px;
+    }
+}

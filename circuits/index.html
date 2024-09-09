@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circuits | Racing Site Template</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="manifest" href="../resources/app.webmanifest" />
+    <script src="../scripts/settings.js"></script>
+
+    <!-- Site by José Enrique/JerosGamer89 -->
+
+    <meta property="og:site_name" content="Racing Site Template" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Amateur Racing League" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<link rel="apple-touch-icon" href="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<meta name="author" content="@jerosajose" />
+    <meta name="theme-color" content="#010101" />
+    <meta name="apple-mobile-web-app-status-bar" content="#010101" />
+    <style>.tabcontent .cards > div {backdrop-filter: blur(15px) !important;}</style>
+</head>
+<body class="tracks">
+    <iframe src="../codepen/particles.html" id="fx" class="universal-bg"></iframe>
+
+    <nav class="ms-fluent">
+        <a href="../">
+            <div src="../assets/nothing.png"
+            alt="tgrlogo" class="tgrlogo"></div>
+        </a>
+        <div class="flex">
+            <a href="../races/">
+                <img src="../assets/nav/races.png" />
+                <span>Races</span>
+            </a>
+            <a href="../standings/">
+                <img src="../assets/nav/champ.png" />
+                <span>Standings</span>
+            </a>
+            <a href="../circuits/">
+                <img src="../assets/nav/circuits.png" />
+                <span>Circuits</span>
+            </a>
+            <a href="../ruleset/">
+                <img src="../assets/nav/ruleset.png" />
+                <span>Ruleset</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="r-list"><h1>circuits</h1>
+        <button onclick="openCity(event, 'baku')">
+            <strong>Baku City Circuit</strong>&nbsp;&nbsp;
+            Azerbaijan
+        </button>
+        <button onclick="openCity(event, 'alonso')">
+            <strong>Alonso</strong>&nbsp;&nbsp;
+            Alonso
+        </button>
+    </div>
+
+    <div id="baku" class="tabcontent">
+        <header>
+            <span>Outdoor Track</span>
+            <h1>Baku Street Circuit</h1>
+            <div class="moreinfo">
+                <a
+                href="https://azerbaijangp.az/en"
+                target="_blank">
+                    Official site
+                </a>
+                <a
+                href="https://google.com/search?q=Baku+Street+Circuit"
+                target="_blank">
+                    Search on Google
+                </a>
+            </div>
+        </header>
+        <img src="../assets/tracks/azerbaijan.svg" class="silhouette" />
+
+        <div class="cards">
+            <div class="location">
+                <p>
+                    <strong>Baku (city centre)</strong><br>
+                    Azerbaijan
+                </p>
+                <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42089.29488466189!2d49.82831590743738!3d40.38117685197623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db472eb07d1%3A0x529ac68af9a1cec2!2sCircuito%20callejero%20de%20Bak%C3%BA!5e0!3m2!1ses!2ses!4v1721854186546!5m2!1ses!2ses"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Map couldn't render</iframe>
+            </div>
+
+            <div class="fastest">
+                <div class="driver">
+                    <img src="../assets/drivers/TSUNODAt.png" />
+                    <div>
+                        <h2>Fastest time</h2>
+                        <div class="lt p-less" style="border-left-color: var(--manor) !important">
+                            <div class="firstrow">
+                                <div class="span">Yuki TSUNODA</div>
+                            </div>
+                            <div class="secrow">
+                                <span>1:69.696 (2024)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first">
+                <h2>first venue</h2>
+                <h1>2016</h1>
+                <strong>GP PETRONAS Baku 2016</strong>
+                Grand Prix
+                &nbsp;&nbsp;&bullet;&nbsp;&nbsp;
+                Race no.69 / 2016
+            </div>
+
+            <div class="length">
+                9m wide average<br>
+                <strong>3,172 metres long</strong>
+                <img src="../assets/tracks/azerbaijan.svg" />
+            </div>
+
+            <div class="karts">
+                <img src="../assets/karts/rt8.png" style="opacity: 0.3" />
+                <div>
+                    <strong>Rookie</strong>
+                    Sodi RT8<br>
+                    15CV · 390cc
+                </div>
+                <div>
+                    <strong>Veteran</strong>
+                    Sodi RT8<br>
+                    18CV · 390cc
+                </div>
+                <div>
+                    <strong>Rocketship</strong>
+                    Sodi RT10<br>
+                    22CV · 460cc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alonso" class="tabcontent">
+        <header>
+            <span>Alonso track</span>
+            <h1>Alonso Racing Circuit</h1>
+            <div class="moreinfo">
+                <a
+                href="tel:alonso-555-1414">
+                    Alonso
+                </a>
+                <a
+                href="//fernandoalonso.com"
+                target="_blank">
+                    Alonso
+                </a>
+            </div>
+        </header>
+
+        <div class="cards">
+            <div class="location">
+                <p>
+                    <strong>Alonso</strong><br>
+                    Alonso
+                </p>
+                <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2897.525481049688!2d-5.834093623071316!3d43.42874007111364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368ebfa769ab89%3A0x8a30966749e9a80c!2sMuseo%20y%20Circuito%20Fernando%20Alonso!5e0!3m2!1ses!2ses!4v1721855068831!5m2!1ses!2ses"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Map couldn't render</iframe>
+            </div>
+
+            <div class="fastest">
+                <div class="driver">
+                    <img src="../assets/drivers/ALONSOt.png" />
+                    <div>
+                        <h2>fastest time</h2>
+                        <div class="lt p-less" style="border-left-color: var(--aston) !important">
+                            <div class="firstrow">
+                                <div class="span">Fernando ALONSO</div>
+                            </div>
+                            <div class="secrow">
+                                <span>0:24.861 (2050)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first">
+                <h2>first venue</h2>
+                <h1>Yesterday</h1>
+                <strong>with my mates</strong>
+                at the park
+                &nbsp;&nbsp;&bullet;&nbsp;&nbsp;
+                14
+            </div>
+
+            <div class="length">
+                A lot of talent wide<br>
+                <strong>2 championships long</strong>
+                <img src="../assets/drivers/ALONSOt.png" style="height: 200px !important;" />
+            </div>
+
+            <div class="karts">
+                <img src="../assets/drivers/ALONSOt.png" style="opacity: 0.5" />
+                <div></div>
+                <div></div>
+                <div>
+                    <strong>Alonso</strong>
+                    Alonso RX7<br>
+                    22CV · 460cc
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // MS Fluent effect
+        const i = document.querySelector('.ms-fluent');
+        document.addEventListener('mousemove', evt => {
+            let x = evt.clientX - i.offsetLeft;
+            let y = evt.clientY - i.offsetTop;
+            i.style.setProperty('--mouse-x', x + "px");
+            i.style.setProperty('--mouse-y', y + "px");
+        });
+
+        // Settings
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.getElementById("fx");
+            var toggleCheckbox = document.getElementById('toggle');
+
+            var storedState = localStorage.getItem('iframeState');
+            if (storedState === 'hidden') {
+                iframe.style.display = 'none';
+                toggleCheckbox.checked = false;
+            } else {
+                iframe.style.display = 'block';
+                toggleCheckbox.checked = true;
+            }
+
+            toggleCheckbox.addEventListener('change', function() {
+                if (toggleCheckbox.checked) {
+                    iframe.style.display = 'block';
+                    localStorage.setItem('iframeState', 'visible');
+                } else {
+                    iframe.style.display = 'none';
+                    localStorage.setItem('iframeState', 'hidden');
+                }
+            });
+        });
+
+
+        // Tabs
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByTagName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

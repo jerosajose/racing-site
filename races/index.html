@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Races | Racing Site Template</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="manifest" href="../resources/app.webmanifest" />
+    <script src="../scripts/settings.js"></script>
+
+    <!-- Site by José Enrique/JerosGamer89 -->
+
+    <meta property="og:site_name" content="Racing Site Template" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Amateur Racing League" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<link rel="apple-touch-icon" href="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<meta name="author" content="@jerosajose" />
+    <meta name="theme-color" content="#010101" />
+    <meta name="apple-mobile-web-app-status-bar" content="#010101" />
+</head>
+<body class="races">
+    <iframe src="../codepen/gradient.html" id="fx" class="universal-bg"></iframe>
+
+    <nav class="ms-fluent">
+        <a href="../">
+            <div class="tgrlogo"></div>
+        </a>
+        <div class="flex">
+            <a href="../races/">
+                <img src="../assets/nav/races.png" />
+                <span>Races</span>
+            </a>
+            <a href="../standings/">
+                <img src="../assets/nav/champ.png" />
+                <span>Standings</span>
+            </a>
+            <a href="../circuits/">
+                <img src="../assets/nav/circuits.png" />
+                <span>Circuits</span>
+            </a>
+            <a href="../ruleset/">
+                <img src="../assets/nav/ruleset.png" />
+                <span>Ruleset</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="r-list"><h1>past races</h1>
+        <h2>2024<hr></h2>
+        <button onclick="openCity(event, 'real')">GP LENOVO Chinese 2024</button>
+        <h2>2023<hr></h2>
+        <button onclick="openCity(event, 'real')">GP PETROBRAS Brasil 2023</button>
+        <button onclick="openCity(event, 'real')">Sprint Race Azerbaijan 2023</button>
+        <h2 class="pre"><hr></h2>
+        <button onclick="openCity(event, 'example')">GP SPONSOR Region Year</button>
+    </div>
+
+    <div id="real" class="tabcontent">
+        <header>
+            <span>Grand Prix&nbsp;&nbsp;&bullet;&nbsp;&nbsp;17 / 2054</span>
+            <h1>LENOVO Chinese 2054</h1>
+            
+            <div class="cards">
+                <div class="desc">
+                    This is a nice description that you can write about your
+                    grand prix, or whatever session you take with your friends.
+                    It only had one free practice session and one qualifying
+                    session for all drivers.
+                    Below there's multiple boxes indicating the track where it
+                    took place, the session format, and when it occurred.
+                </div>
+                <div class="track">
+                    <a href="../circuits/" target="_blank">
+                        <span>
+                            <strong>Shanghai Intl. Circuit</strong><br>
+                            China
+                        </span><br>
+                        <img src="../assets/tracks/china.svg" />
+                    </a>
+                </div>
+                <div class="session">
+                    <strong>Grand Prix</strong><br>
+                    Free Practice, Qualifying, Race
+                </div>
+                <div class="date">
+                    1st Jan 1970
+                </div>
+            </div>
+        </header>
+
+        <div class="r-parent">
+            <div class="results two-column">
+                <details class="race">
+                    <summary>Free Practice</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Best time</span>
+                            <span>Laps</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time fastest">1:18.177</span>
+                            <span class="laps">13</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:21.763</span>
+                            <span class="laps">13</span>
+                        </li>
+                        <li>
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.266</span>
+                            <span class="laps">12</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.967</span>
+                            <span class="laps">12</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:23.165</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:24.293</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:25.979</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:33.771</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">2:13.414</span>
+                            <span class="laps">7</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DSQ</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color hrt"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNS</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Qualifying</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Lap time</span>
+                            <span>On lap</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time fastest">1:18.177</span>
+                            <span class="laps">1</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:21.763</span>
+                            <span class="laps">5</span>
+                        </li>
+                        <li>
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.266</span>
+                            <span class="laps">4</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.967</span>
+                            <span class="laps">3</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:23.165</span>
+                            <span class="laps">6</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:24.293</span>
+                            <span class="laps">5</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:25.979</span>
+                            <span class="laps">1</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:33.771</span>
+                            <span class="laps">2</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">2:13.414</span>
+                            <span class="laps">7</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DSQ</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color hrt"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">Loser LOL</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Race</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Gap</span>
+                            <span>Laps</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">Interval</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+0.700</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li class="fastest">
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+2.738</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+15.231</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+46.824</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:01.308</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:14.237</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:15.593</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+99:99.999</span>
+                            <span class="laps">70</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNF</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNF</span>
+                            <span class="laps">3</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Onboard</summary>
+                    <iframe src="https://www.youtube.com/embed/77CohN1Avhc"
+                    class="video"
+                    title="ur vid goes here"  frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <!--
+                    you can alternatively use this lower third
+                    with a different and regular style, including
+                    the team colour and driver's final position,
+                    and removing the flag
+
+                    the one with the flag was more common in some
+                    onboard videos and replays, but the one below
+                    was also used, choosing one to use is up to you
+
+
+                    <div class="metadata">
+                        <div class="lt">
+                            <div class="firstrow">
+                                <div class="count">3</div>
+                                <div class="color rpoint"></div>
+                                <div class="span">Driversname</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Racing Point Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    -->
+
+                    <div class="metadata">
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Driversname</div>
+                                <img src="../assets/flags/flag-es.png" class="flag" />
+                            </div>
+                            <div class="secrow">
+                                <span>Racing Point Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="podium">
+                <h1>Podium</h1>
+                <div class="driver">
+                    <img src="../assets/drivers/HULKENBERGt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">1</div>
+                            <div class="color renault"></div>
+                            <div class="span">Nico HÜLKENBERG</div>
+                        </div>
+                        <div class="secrow">
+                            <span>Renault</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver">
+                    <img src="../assets/drivers/GASLYt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">2</div>
+                            <div class="color hrt"></div>
+                            <div class="span">Pierre GASLY</div>
+                        </div>
+                        <div class="secrow">
+                            <span>HRT Cosworth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver">
+                    <img src="../assets/drivers/ALONSOt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">3</div>
+                            <div class="color bmw"></div>
+                            <div class="span">Fernando ALONSO</div>
+                        </div>
+                        <div class="secrow">
+                            <span>BMW Sauber</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="example" class="tabcontent">
+        <header>
+            <span>Grand Prix&nbsp;&nbsp;&bullet;&nbsp;&nbsp;Event no. / Year (identifier)</span>
+            <h1>SPONSOR Region Year</h1>
+            
+            <div class="cards">
+                <div class="desc">
+                    This is a nice description that you can write about your
+                    grand prix, or whatever session you take with your friends.
+                    It only had one free practice session and one qualifying
+                    session for all drivers.
+                    Below there's multiple boxes indicating the track where it
+                    took place, the session format, and when it occurred.
+                </div>
+                <div class="track">
+                    <a href="../circuits/" target="_blank">
+                        <span>
+                            <strong>Blackwood Track</strong><br>
+                            Listenbourg
+                        </span><br>
+                        <img src="../assets/tracks/blackwood.png" />
+                    </a>
+                </div>
+                <div class="session">
+                    <strong>Grand Prix</strong><br>
+                    Free Practice, Qualifying, Race
+                </div>
+                <div class="date">
+                    1st Jan 1970
+                </div>
+            </div>
+        </header>
+
+        <div class="r-parent">
+            <div class="results two-column">
+                <details class="race">
+                    <summary>Free Practice</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Best time</span>
+                            <span>Laps</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time fastest">1:18.177</span>
+                            <span class="laps">13</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:21.763</span>
+                            <span class="laps">13</span>
+                        </li>
+                        <li>
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.266</span>
+                            <span class="laps">12</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.967</span>
+                            <span class="laps">12</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:23.165</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:24.293</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:25.979</span>
+                            <span class="laps">11</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:33.771</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">2:13.414</span>
+                            <span class="laps">7</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DSQ</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color hrt"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNS</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Qualifying</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Lap time</span>
+                            <span>On lap</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time fastest">1:18.177</span>
+                            <span class="laps">1</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:21.763</span>
+                            <span class="laps">5</span>
+                        </li>
+                        <li>
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.266</span>
+                            <span class="laps">4</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:22.967</span>
+                            <span class="laps">3</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:23.165</span>
+                            <span class="laps">6</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:24.293</span>
+                            <span class="laps">5</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:25.979</span>
+                            <span class="laps">1</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">1:33.771</span>
+                            <span class="laps">2</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">2:13.414</span>
+                            <span class="laps">7</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DSQ</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color hrt"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">Loser LOL</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Race</summary>
+    
+                    <ol>
+                        <li class="header">
+                            <span>Driver</span>
+                            <span>Gap</span>
+                            <span>Laps</span>
+                        </li>
+                        <li>
+                            <div class="count">1</div>
+                            <div class="color ferrari"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">Interval</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">2</div>
+                            <div class="color renault"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+0.700</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li class="fastest">
+                            <div class="count">3</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+2.738</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">4</div>
+                            <div class="color rpoint"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+15.231</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">5</div>
+                            <div class="color williams"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+46.824</span>
+                            <span class="laps">72</span>
+                        </li>
+                        <li>
+                            <div class="count">6</div>
+                            <div class="color mclaren-r"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:01.308</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">7</div>
+                            <div class="color toro-rosso"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:14.237</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">8</div>
+                            <div class="color aston"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+1:15.593</span>
+                            <span class="laps">71</span>
+                        </li>
+                        <li>
+                            <div class="count">9</div>
+                            <div class="color mclaren-h"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">+99:99.999</span>
+                            <span class="laps">70</span>
+                        </li>
+                        <li class="dsq">
+                            <div class="count">&nbsp;</div>
+                            <div class="color manor"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNF</span>
+                            <span class="laps">10</span>
+                        </li>
+                        <li class="dns">
+                            <div class="count">&nbsp;</div>
+                            <div class="color merc"></div>
+                            <span class="name">Driversname</span>
+                            <span class="time">DNF</span>
+                            <span class="laps">3</span>
+                        </li>
+                    </ol>
+                </details>
+                <details class="race">
+                    <summary>Onboard</summary>
+                    <iframe src="https://www.youtube.com/embed/77CohN1Avhc"
+                    class="video"
+                    title="ur vid goes here"  frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    <!--
+                    you can alternatively use this lower third
+                    with a different and regular style, including
+                    the team colour and driver's final position,
+                    and removing the flag
+
+                    the one with the flag was more common in some
+                    onboard videos and replays, but the one below
+                    was also used, choosing one to use is up to you
+
+
+                    <div class="metadata">
+                        <div class="lt">
+                            <div class="firstrow">
+                                <div class="count">3</div>
+                                <div class="color rpoint"></div>
+                                <div class="span">Driversname</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Racing Point Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    -->
+
+                    <div class="metadata">
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Driversname</div>
+                                <img src="../assets/flags/flag-es.png" class="flag" />
+                            </div>
+                            <div class="secrow">
+                                <span>Racing Point Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div class="podium">
+                <h1>Podium</h1>
+                <div class="driver">
+                    <img src="../assets/drivers/HULKENBERGt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">1</div>
+                            <div class="color renault"></div>
+                            <div class="span">Nico HÜLKENBERG</div>
+                        </div>
+                        <div class="secrow">
+                            <span>Renault</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver">
+                    <img src="../assets/drivers/GASLYt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">2</div>
+                            <div class="color hrt"></div>
+                            <div class="span">Pierre GASLY</div>
+                        </div>
+                        <div class="secrow">
+                            <span>HRT Cosworth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver">
+                    <img src="../assets/drivers/ALONSOt.png" />
+                    <div class="lt">
+                        <div class="firstrow">
+                            <div class="count">3</div>
+                            <div class="color bmw"></div>
+                            <div class="span">Fernando ALONSO</div>
+                        </div>
+                        <div class="secrow">
+                            <span>BMW Sauber</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/settings.js" async></script>
+    <script>
+        // MS Fluent effect
+        const i = document.querySelector('.ms-fluent');
+        document.addEventListener('mousemove', evt => {
+            let x = evt.clientX - i.offsetLeft;
+            let y = evt.clientY - i.offsetTop;
+            i.style.setProperty('--mouse-x', x + "px");
+            i.style.setProperty('--mouse-y', y + "px");
+        });
+
+
+        // Tabs selector stolen from W3schools lol
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByTagName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        } 
+    </script>
+</body>
+</html>

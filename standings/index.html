@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standings | Racing Site Template</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="manifest" href="../resources/app.webmanifest" />
+    <script src="../scripts/settings.js"></script>
+
+    <!-- Site by José Enrique/JerosGamer89 -->
+
+    <meta property="og:site_name" content="Racing Site Template" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Amateur Racing League" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<link rel="apple-touch-icon" href="https://jerosajose.github.io/preview/racing-site/assets/logo.png" />
+	<meta name="author" content="@jerosajose" />
+    <meta name="theme-color" content="#010101" />
+    <meta name="apple-mobile-web-app-status-bar" content="#010101" />
+</head>
+<body class="champ">
+    <iframe src="../codepen/diagonals.html" id="fx" class="universal-bg"></iframe>
+
+    <nav class="ms-fluent">
+        <a href="../">
+            <div src="../assets/nothing.png"
+            alt="tgrlogo" class="tgrlogo"></div>
+        </a>
+        <div class="flex">
+            <a href="../races/">
+                <img src="../assets/nav/races.png" />
+                <span>Races</span>
+            </a>
+            <a href="../standings/">
+                <img src="../assets/nav/champ.png" />
+                <span>Standings</span>
+            </a>
+            <a href="../circuits/">
+                <img src="../assets/nav/circuits.png" />
+                <span>Circuits</span>
+            </a>
+            <a href="../ruleset/">
+                <img src="../assets/nav/ruleset.png" />
+                <span>Ruleset</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="r-list c"><h1>standings</h1>
+        <button onclick="openCity(event, '2024')">2024 World Driver's Championship</button>
+        <button onclick="openCity(event, '1970')">1970 World Driver's Championship</button>
+    </div>
+
+    <div id="2024" class="tabcontent">
+        <header>
+            <span>Driver's Championship · Ongoing</span>
+            <h1>WDC 2024</h1>
+        </header>
+
+        <div class="champ-content">
+            <div class="participants">
+                <h3>Drivers</h3>
+            
+                <div class="scrolling">
+                    <div class="driver">
+                        <img src="../assets/drivers/ALONSOt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Fernando ALONSO</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Ferrari</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/ALBONt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Alexander ALBON</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/BEARMANt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Oliver BEARMAN</div>
+                            </div>
+                            <div class="secrow">
+                                <span>McLaren Honda</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/HULKENBERGt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Nico HÜLKENBERG</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Manor Renualt</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/LAWSONt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Liam LAWSON</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Aston Martin Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/MAGNUSSENt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Kevin MAGNUSSEN</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Alpine Renault</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/unknown.png" class="unknown" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Joe MAMA</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Caterham F1 Renault</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/BOTTASt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Valteri BOTT-ASS</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Force India Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/STROLLt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Get STROLLED</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Sauber Ferrari</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="winner"
+            style="background-image: url('../assets/champ-bg/');">
+                <img
+                src="../assets/drivers-champ.png"
+                class="trophy current"
+                style="filter: drop-shadow(0 0 20px var(--));" />
+                <div class="meta">
+                    <h1>On-going</h1>
+                </div>
+            </div>
+
+            <div class="stats">
+                <ol>
+                    <li class="header">
+                        <span>Driver</span>
+                        <div>
+                            <span>Race 1</span>
+                            <span>Sprint</span>
+                            <span>Race 2</span>
+                            <span>Total</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">1</div>
+                        <div class="color merc"></div>
+                        <img src="../assets/drivers/GASLYt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">10</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">2</div>
+                        <div class="color sauber"></div>
+                        <img src="../assets/drivers/PEREZt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">8</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">3</div>
+                        <div class="color bmw"></div>
+                        <img src="../assets/drivers/PIASTRIt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">6</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">4</div>
+                        <div class="color williams"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">5</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">5</div>
+                        <div class="color renault"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">4</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">6</div>
+                        <div class="color hrt"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">0</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">7</div>
+                        <div class="color caterham"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">0</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">8</div>
+                        <div class="color rpoint"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">9</div>
+                        <div class="color ferrari"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="1970" class="tabcontent">
+        <header>
+            <span>Driver's Championship</span>
+            <h1>WDC 1970</h1>
+        </header>
+
+        <div class="champ-content">
+            <div class="participants">
+                <h3>Drivers</h3>
+            
+                <div class="scrolling">
+                    <div class="driver">
+                        <img src="../assets/drivers/ALONSOt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Fernando ALONSO</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Ferrari</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/ALBONt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Alexander ALBON</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/BEARMANt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Oliver BEARMAN</div>
+                            </div>
+                            <div class="secrow">
+                                <span>McLaren Honda</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/HULKENBERGt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Nico HÜLKENBERG</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Manor Renualt</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/LAWSONt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Liam LAWSON</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Aston Martin Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="driver">
+                        <img src="../assets/drivers/MAGNUSSENt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Kevin MAGNUSSEN</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Alpine Renault</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/unknown.png" class="unknown" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Joe MAMA</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Caterham F1 Renault</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/BOTTASt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Valteri BOTT-ASS</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Force India Mercedes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="driver">
+                        <img src="../assets/drivers/STROLLt.png" />
+                        <div class="lt p-less">
+                            <div class="firstrow">
+                                <div class="span">Get STROLLED</div>
+                            </div>
+                            <div class="secrow">
+                                <span>Sauber Ferrari</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="winner"
+            style="background-image: url('../assets/champ-bg/alonzo.webp');">
+                <img
+                src="../assets/drivers-champ.png"
+                class="trophy"
+                style="filter: drop-shadow(0 0 20px var(--manor));" />
+                <div class="meta">
+                    <h1>Fernando<br>ALONSO</h1>
+                    <span>2 wins</span>
+                    <span>3 pole positions</span>
+                    <span>1 fastest lap</span>
+                    <span>25 points</span>
+                </div>
+            </div>
+
+            <div class="stats">
+                <ol>
+                    <li class="header">
+                        <span>Driver</span>
+                        <div>
+                            <span>Race 1</span>
+                            <span>Sprint</span>
+                            <span>Race 2</span>
+                            <span>Total</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">1</div>
+                        <div class="color merc"></div>
+                        <img src="../assets/drivers/HAMILTONt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">10</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">2</div>
+                        <div class="color sauber"></div>
+                        <img src="../assets/drivers/LECLERCt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">8</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">3</div>
+                        <div class="color bmw"></div>
+                        <img src="../assets/drivers/ZHOUt.png" class="podium-img" />
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">6</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">4</div>
+                        <div class="color williams"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">5</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">5</div>
+                        <div class="color renault"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">4</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">6</div>
+                        <div class="color hrt"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">0</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">7</div>
+                        <div class="color caterham"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">0</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">8</div>
+                        <div class="color rpoint"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="count">9</div>
+                        <div class="color ferrari"></div>
+                        <span class="name">Driversname</span>
+                        <div class="data">
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="psum">-</span>
+                            <span class="ptotal">-</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // MS Fluent effect
+        const i = document.querySelector('.ms-fluent');
+        document.addEventListener('mousemove', evt => {
+            let x = evt.clientX - i.offsetLeft;
+            let y = evt.clientY - i.offsetTop;
+            i.style.setProperty('--mouse-x', x + "px");
+            i.style.setProperty('--mouse-y', y + "px");
+        });
+
+        // Settings
+        document.addEventListener("DOMContentLoaded", function() {
+            var iframe = document.getElementById("fx");
+            var toggleCheckbox = document.getElementById('toggle');
+
+            var storedState = localStorage.getItem('iframeState');
+            if (storedState === 'hidden') {
+                iframe.style.display = 'none';
+                toggleCheckbox.checked = false;
+            } else {
+                iframe.style.display = 'block';
+                toggleCheckbox.checked = true;
+            }
+
+            toggleCheckbox.addEventListener('change', function() {
+                if (toggleCheckbox.checked) {
+                    iframe.style.display = 'block';
+                    localStorage.setItem('iframeState', 'visible');
+                } else {
+                    iframe.style.display = 'none';
+                    localStorage.setItem('iframeState', 'hidden');
+                }
+            });
+        });
+
+        // Tabs
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByTagName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+        // H Scroll
+        const scrollers = document.querySelectorAll(".participants");
+        function addAnimation() {
+            scrollers.forEach((scroller) => {
+                scroller.setAttribute("data-animated", true);
+
+                const scrollerInner = scroller.querySelector(".scrolling");
+                const scrollerContent = Array.from(scrollerInner.children);
+
+                scrollerContent.forEach((item) => {
+                const duplicatedItem = item.cloneNode(true);
+                duplicatedItem.setAttribute("aria-hidden", true);
+                scrollerInner.appendChild(duplicatedItem);
+                });
+            });
+        }
+
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+        }
+    </script>
+</body>
+</html>
